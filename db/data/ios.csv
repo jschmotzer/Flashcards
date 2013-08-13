@@ -1,0 +1,36 @@
+The File icon on the left indicates the...|project navigator
+xib is prounouced?|zib
+When you build a project, the xib file is compiled into a|NIB file
+Developers manipulate _____ files, and applications use ____ files|XIB NIB
+When you build an application, the compiled NIB file is copied into the applications's...|bundle
+File's Owner|An instance of UIApplication. The event queue for you application is managed by this object
+First Responder|A relic from Desktop Cocoa. Ignore for now.
+QuizAppDelegate|An instance of QuizAppDelegate, an object created by Xcode specifically for this project. You will be editing the source code for this class.
+Window|An instance of UIWindow that represents the application's window
+The View area on the top right side toggles what three views, in order|Navigator, Debug, and Utilities
+The utilities area has two section. What are they?|The inspector and the library
+In the  attributes inspector you can...|Set the instance variables of the selected object
+What is a Model-View-Controller pattern?|Every object you create is exactly one of the following: a model object, a view object, or a controller object
+Model Objects|Hold data and know nothing about the user interface. Model objects usually use standard collection classes and value types.
+View Objects|Are visible to the user. Views are usually standard UIView subclasses. Usually end in the word View
+View and model objects are the _____ of an application|Factory Workers They focus only on completing specific tasks
+Controllers are the ____ of an application|Managers
+Controllers do these 3 things|Keep the view and model objects in sync, control the flow of the application, and save the model objects out to the filesystem.
+A controller usually has the words ____ in it|App Delegate
+What do IBAction and IBOutlet do?|Allow you to connect your controller and view objects in the XIB file
+When the quiz application loads its interface from MainWindow.xib, the objects that make up the interface are...|floating around in memory
+A connection lets an object know where|another object is in memory
+Connections (pointers) must go...|the way in which the informations flowing
+When UIButton is tapped, it...|sends a message (an action) to another object called the target
+To set and object's target and actions, you|Control-drag from the object to its target
+An application icon is|a simple image that represents the applicaton on the iOS desktop.
+Application icon size of iPhone/iPod touch (no Retina display)|57x57 pixels
+Application icon size of iPhone/iPod touch (with Retina display)|114x114 pixels
+Application icon size of iPad|72x72 pixels
+In general there are two types of files in an application...|code and resources
+Resources are things like...|images and sounds and XIB that are used by the application at runtime
+XIB files are read at?|runtime
+The launch image appears while the...|application is loading
+iPhone/iPod touch (no retina display) launch image size|320x480 pixels
+iPhone/iPod touch (retina display) launch image size|640x960 pixels
+iPad luanch image size|1024x768 pixels

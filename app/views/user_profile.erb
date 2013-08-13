@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="centering">
+    <h1 class="ayo">Welcome to your profile page, <%= current_user.name %></h1>
+    <% current_user.rounds.each do |round| %>
+      <div class="round_contents">
+        <p> Round: <%= round.id %> </p>
+        <ul>
+          <li> Total questions: <%= round.deck.cards.size %></li>
+          <li> Correct answers: <%= truth(round) %> </li>
+          <li> Percent Correct: <%= correct_answers(round) %>%</li>
+        </ul>
+      </div>
+    <% end %>
+      <a class="btn btn-default colored" href="/deck_list">Let's play</a>
+
+
+      <a class="btn btn-default colored" href="/user/logout">Logout</a>
+    </div>
+</div>

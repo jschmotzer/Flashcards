@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="container_no_color" id="flashcard">
+
+    <section class="card_container">
+      <div id="card">
+        <figure class="front"><%= @card.question %></figure>
+        <figure class="back"></figure>
+      </div>
+    </section>
+      <%= erb :_answer_entry, layout: false %>
+
+  </div>
+</div>

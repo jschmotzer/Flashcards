@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="container_no_color">
+    <div class="all_decks">
+      <% @decks.each do |deck| %>
+        <div class="deck_sel"><a class= "deck_sel_white" href="/play/<%= deck.id %>"><%= deck.title %></a></div>
+      <% end %>
+      <br>
+    <a class="btn btn-default colored" href="/user/<%= current_user.id %>/profile">Back to profile</a>
+  </div>
+</div>

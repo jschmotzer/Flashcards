@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="container">
+      <form id="login" action="/user/signin" method="POST">
+        <% if @errors %>
+          <% @errors.each do |error| %>
+            <div class="errors"><%= error %></div>
+          <% end %>
+        <% end %>
+        <div class="controls">
+          <input id="email" name="user[email]" type="text" placeholder="Enter your email" value="<%= @user.try(:email) %>">
+        </div>
+        <br>
+        <div class="controls">
+          <input id="password" name="user[password]" type="password" placeholder="Password" value="<%= @user.try(:password) %>">
+        </div>
+        <div class="the_sub">
+          <input class="btn btn-default btn-block" type="submit" value="Login">
+        </div>
+        <div class="new_user"><a href="/user/create">New user?</a></div>
+      </form>
+    </div>
+  </div>
+</div>
